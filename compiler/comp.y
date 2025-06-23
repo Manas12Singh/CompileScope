@@ -26,6 +26,7 @@ typedef enum {
 void yyerror(char* s);
 
 struct ASTNode{
+    char* tokenType;
     ASTNodeType type;
     char *value;
     struct ASTNodeList *children;
@@ -43,8 +44,6 @@ struct ASTNode{
 /* Tokens */
 
 %token DEFINE
-
-%token NEWLINE
 
 %token NUM STR CHR VFLOAT
 
@@ -86,8 +85,6 @@ struct ASTNode{
 
 program
     : preprocess_list declaration_list {}
-    | declaration_list {}
-    | preprocess_list {}
     ;
 
 preprocess_list
@@ -97,11 +94,15 @@ preprocess_list
     ;
 
 preprocess_statement
-    : DEFINE ID value {}
-    | DEFINE ID LP ID RP SC {}
-    | DEFINE ID LP ID RP LBE RBE SC {}
-    | DEFINE ID LP ID RP LBT RBT SC {}
+    : define_id define_value {}
+    | define_id 
+    | define_id LP ID RP LBE RBE SC {}
+    | define_id LP ID RP LBT RBT SC {}
     ;
+
+define_value
+    : value {}
+    | L ID RP {}
 
 %%
 
