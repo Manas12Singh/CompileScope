@@ -1,0 +1,956 @@
+[
+  {
+    "name": "main",
+    "body": {
+      "kind": 32,
+      "token": "int",
+      "body": [
+        {
+          "kind": 32,
+          "token": ";",
+          "body": [
+            {
+              "kind": 38,
+              "token": "=",
+              "lhs": {
+                "kind": 0,
+                "token": "="
+              }
+            },
+            {
+              "kind": 38,
+              "token": ";",
+              "lhs": {
+                "kind": 18,
+                "token": "0",
+                "lhs": {
+                  "kind": 44,
+                  "token": "0"
+                },
+                "rhs": {
+                  "kind": 16,
+                  "token": "0",
+                  "lhs": {
+                    "kind": 40,
+                    "token": "0"
+                  },
+                  "rhs": {
+                    "kind": 43,
+                    "token": "0",
+                    "lhs": {
+                      "kind": 42,
+                      "token": "0"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "kind": 38,
+          "token": "printf",
+          "lhs": {
+            "kind": 37,
+            "token": ")",
+            "lhs": {
+              "kind": 40,
+              "token": "printf"
+            },
+            "args": [
+              {
+                "kind": 43,
+                "token": "\"Hello, World!\\n\"",
+                "lhs": {
+                  "kind": 40,
+                  "token": "\"Hello, World!\\n\""
+                }
+              }
+            ]
+          }
+        },
+        {
+          "kind": 38,
+          "token": "printf",
+          "lhs": {
+            "kind": 37,
+            "token": ")",
+            "lhs": {
+              "kind": 40,
+              "token": "printf"
+            },
+            "args": [
+              {
+                "kind": 43,
+                "token": "\"a=%d\\n\"",
+                "lhs": {
+                  "kind": 40,
+                  "token": "\"a=%d\\n\""
+                }
+              },
+              {
+                "kind": 40,
+                "token": "a"
+              }
+            ]
+          }
+        },
+        {
+          "kind": 26,
+          "token": "return",
+          "lhs": {
+            "kind": 43,
+            "token": "0",
+            "lhs": {
+              "kind": 42,
+              "token": "0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "__va_arg_fp",
+    "body": {
+      "kind": 32,
+      "token": "if",
+      "body": [
+        {
+          "kind": 27,
+          "token": "if",
+          "cond": {
+            "kind": 15,
+            "token": ">=",
+            "lhs": {
+              "kind": 43,
+              "token": "112",
+              "lhs": {
+                "kind": 42,
+                "token": "112",
+                "val": 112
+              }
+            },
+            "rhs": {
+              "kind": 43,
+              "token": "fp_offset",
+              "lhs": {
+                "kind": 19,
+                "token": "fp_offset",
+                "lhs": {
+                  "kind": 21,
+                  "token": "->",
+                  "lhs": {
+                    "kind": 40,
+                    "token": "ap"
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "kind": 26,
+            "token": "return",
+            "lhs": {
+              "kind": 43,
+              "token": ")",
+              "lhs": {
+                "kind": 37,
+                "token": ")",
+                "lhs": {
+                  "kind": 40,
+                  "token": "__va_arg_mem"
+                },
+                "args": [
+                  {
+                    "kind": 43,
+                    "token": "ap",
+                    "lhs": {
+                      "kind": 40,
+                      "token": "ap"
+                    }
+                  },
+                  {
+                    "kind": 43,
+                    "token": "sz",
+                    "lhs": {
+                      "kind": 40,
+                      "token": "sz"
+                    }
+                  },
+                  {
+                    "kind": 43,
+                    "token": "align",
+                    "lhs": {
+                      "kind": 40,
+                      "token": "align"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "kind": 32,
+          "token": ";",
+          "body": [
+            {
+              "kind": 38,
+              "token": "=",
+              "lhs": {
+                "kind": 18,
+                "token": "=",
+                "lhs": {
+                  "kind": 0,
+                  "token": "="
+                },
+                "rhs": {
+                  "kind": 0,
+                  "token": "="
+                }
+              }
+            },
+            {
+              "kind": 38,
+              "token": ";",
+              "lhs": {
+                "kind": 18,
+                "token": "ap",
+                "lhs": {
+                  "kind": 44,
+                  "token": "ap"
+                },
+                "rhs": {
+                  "kind": 16,
+                  "token": "ap",
+                  "lhs": {
+                    "kind": 40,
+                    "token": "ap"
+                  },
+                  "rhs": {
+                    "kind": 43,
+                    "token": "+",
+                    "lhs": {
+                      "kind": 1,
+                      "token": "+",
+                      "lhs": {
+                        "kind": 43,
+                        "token": "reg_save_area",
+                        "lhs": {
+                          "kind": 19,
+                          "token": "reg_save_area",
+                          "lhs": {
+                            "kind": 21,
+                            "token": "->",
+                            "lhs": {
+                              "kind": 40,
+                              "token": "ap"
+                            }
+                          }
+                        }
+                      },
+                      "rhs": {
+                        "kind": 43,
+                        "token": "+",
+                        "lhs": {
+                          "kind": 3,
+                          "token": "+",
+                          "lhs": {
+                            "kind": 43,
+                            "token": "fp_offset",
+                            "lhs": {
+                              "kind": 19,
+                              "token": "fp_offset",
+                              "lhs": {
+                                "kind": 21,
+                                "token": "->",
+                                "lhs": {
+                                  "kind": 40,
+                                  "token": "ap"
+                                }
+                              }
+                            }
+                          },
+                          "rhs": {
+                            "kind": 43,
+                            "token": "+",
+                            "lhs": {
+                              "kind": 42,
+                              "token": "+",
+                              "val": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "kind": 38,
+          "token": "ap",
+          "lhs": {
+            "kind": 18,
+            "token": "+=",
+            "lhs": {
+              "kind": 16,
+              "token": "+=",
+              "lhs": {
+                "kind": 40,
+                "token": "+="
+              },
+              "rhs": {
+                "kind": 43,
+                "token": "+=",
+                "lhs": {
+                  "kind": 20,
+                  "token": "+=",
+                  "lhs": {
+                    "kind": 21,
+                    "token": "->",
+                    "lhs": {
+                      "kind": 40,
+                      "token": "ap"
+                    }
+                  }
+                }
+              }
+            },
+            "rhs": {
+              "kind": 16,
+              "token": "+=",
+              "lhs": {
+                "kind": 19,
+                "token": "+=",
+                "lhs": {
+                  "kind": 21,
+                  "token": "+=",
+                  "lhs": {
+                    "kind": 40,
+                    "token": "+="
+                  }
+                }
+              },
+              "rhs": {
+                "kind": 43,
+                "token": "+=",
+                "lhs": {
+                  "kind": 1,
+                  "token": "+=",
+                  "lhs": {
+                    "kind": 43,
+                    "token": "+=",
+                    "lhs": {
+                      "kind": 19,
+                      "token": "+=",
+                      "lhs": {
+                        "kind": 21,
+                        "token": "+=",
+                        "lhs": {
+                          "kind": 40,
+                          "token": "+="
+                        }
+                      }
+                    }
+                  },
+                  "rhs": {
+                    "kind": 43,
+                    "token": "8",
+                    "lhs": {
+                      "kind": 42,
+                      "token": "8",
+                      "val": 8
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "kind": 26,
+          "token": "return",
+          "lhs": {
+            "kind": 43,
+            "token": "r",
+            "lhs": {
+              "kind": 40,
+              "token": "r"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "__va_arg_gp",
+    "body": {
+      "kind": 32,
+      "token": "if",
+      "body": [
+        {
+          "kind": 27,
+          "token": "if",
+          "cond": {
+            "kind": 15,
+            "token": ">=",
+            "lhs": {
+              "kind": 43,
+              "token": "48",
+              "lhs": {
+                "kind": 42,
+                "token": "48",
+                "val": 48
+              }
+            },
+            "rhs": {
+              "kind": 43,
+              "token": "gp_offset",
+              "lhs": {
+                "kind": 19,
+                "token": "gp_offset",
+                "lhs": {
+                  "kind": 21,
+                  "token": "->",
+                  "lhs": {
+                    "kind": 40,
+                    "token": "ap"
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "kind": 26,
+            "token": "return",
+            "lhs": {
+              "kind": 43,
+              "token": ")",
+              "lhs": {
+                "kind": 37,
+                "token": ")",
+                "lhs": {
+                  "kind": 40,
+                  "token": "__va_arg_mem"
+                },
+                "args": [
+                  {
+                    "kind": 43,
+                    "token": "ap",
+                    "lhs": {
+                      "kind": 40,
+                      "token": "ap"
+                    }
+                  },
+                  {
+                    "kind": 43,
+                    "token": "sz",
+                    "lhs": {
+                      "kind": 40,
+                      "token": "sz"
+                    }
+                  },
+                  {
+                    "kind": 43,
+                    "token": "align",
+                    "lhs": {
+                      "kind": 40,
+                      "token": "align"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "kind": 32,
+          "token": ";",
+          "body": [
+            {
+              "kind": 38,
+              "token": "=",
+              "lhs": {
+                "kind": 18,
+                "token": "=",
+                "lhs": {
+                  "kind": 0,
+                  "token": "="
+                },
+                "rhs": {
+                  "kind": 0,
+                  "token": "="
+                }
+              }
+            },
+            {
+              "kind": 38,
+              "token": ";",
+              "lhs": {
+                "kind": 18,
+                "token": "ap",
+                "lhs": {
+                  "kind": 44,
+                  "token": "ap"
+                },
+                "rhs": {
+                  "kind": 16,
+                  "token": "ap",
+                  "lhs": {
+                    "kind": 40,
+                    "token": "ap"
+                  },
+                  "rhs": {
+                    "kind": 43,
+                    "token": "+",
+                    "lhs": {
+                      "kind": 1,
+                      "token": "+",
+                      "lhs": {
+                        "kind": 43,
+                        "token": "reg_save_area",
+                        "lhs": {
+                          "kind": 19,
+                          "token": "reg_save_area",
+                          "lhs": {
+                            "kind": 21,
+                            "token": "->",
+                            "lhs": {
+                              "kind": 40,
+                              "token": "ap"
+                            }
+                          }
+                        }
+                      },
+                      "rhs": {
+                        "kind": 43,
+                        "token": "+",
+                        "lhs": {
+                          "kind": 3,
+                          "token": "+",
+                          "lhs": {
+                            "kind": 43,
+                            "token": "gp_offset",
+                            "lhs": {
+                              "kind": 19,
+                              "token": "gp_offset",
+                              "lhs": {
+                                "kind": 21,
+                                "token": "->",
+                                "lhs": {
+                                  "kind": 40,
+                                  "token": "ap"
+                                }
+                              }
+                            }
+                          },
+                          "rhs": {
+                            "kind": 43,
+                            "token": "+",
+                            "lhs": {
+                              "kind": 42,
+                              "token": "+",
+                              "val": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "kind": 38,
+          "token": "ap",
+          "lhs": {
+            "kind": 18,
+            "token": "+=",
+            "lhs": {
+              "kind": 16,
+              "token": "+=",
+              "lhs": {
+                "kind": 40,
+                "token": "+="
+              },
+              "rhs": {
+                "kind": 43,
+                "token": "+=",
+                "lhs": {
+                  "kind": 20,
+                  "token": "+=",
+                  "lhs": {
+                    "kind": 21,
+                    "token": "->",
+                    "lhs": {
+                      "kind": 40,
+                      "token": "ap"
+                    }
+                  }
+                }
+              }
+            },
+            "rhs": {
+              "kind": 16,
+              "token": "+=",
+              "lhs": {
+                "kind": 19,
+                "token": "+=",
+                "lhs": {
+                  "kind": 21,
+                  "token": "+=",
+                  "lhs": {
+                    "kind": 40,
+                    "token": "+="
+                  }
+                }
+              },
+              "rhs": {
+                "kind": 43,
+                "token": "+=",
+                "lhs": {
+                  "kind": 1,
+                  "token": "+=",
+                  "lhs": {
+                    "kind": 43,
+                    "token": "+=",
+                    "lhs": {
+                      "kind": 19,
+                      "token": "+=",
+                      "lhs": {
+                        "kind": 21,
+                        "token": "+=",
+                        "lhs": {
+                          "kind": 40,
+                          "token": "+="
+                        }
+                      }
+                    }
+                  },
+                  "rhs": {
+                    "kind": 43,
+                    "token": "8",
+                    "lhs": {
+                      "kind": 42,
+                      "token": "8",
+                      "val": 8
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "kind": 26,
+          "token": "return",
+          "lhs": {
+            "kind": 43,
+            "token": "r",
+            "lhs": {
+              "kind": 40,
+              "token": "r"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "__va_arg_mem",
+    "body": {
+      "kind": 32,
+      "token": "void",
+      "body": [
+        {
+          "kind": 32,
+          "token": ";",
+          "body": [
+            {
+              "kind": 38,
+              "token": "=",
+              "lhs": {
+                "kind": 18,
+                "token": "=",
+                "lhs": {
+                  "kind": 0,
+                  "token": "="
+                },
+                "rhs": {
+                  "kind": 0,
+                  "token": "="
+                }
+              }
+            },
+            {
+              "kind": 38,
+              "token": ";",
+              "lhs": {
+                "kind": 18,
+                "token": "ap",
+                "lhs": {
+                  "kind": 44,
+                  "token": "ap"
+                },
+                "rhs": {
+                  "kind": 16,
+                  "token": "ap",
+                  "lhs": {
+                    "kind": 40,
+                    "token": "ap"
+                  },
+                  "rhs": {
+                    "kind": 43,
+                    "token": "overflow_arg_area",
+                    "lhs": {
+                      "kind": 19,
+                      "token": "overflow_arg_area",
+                      "lhs": {
+                        "kind": 21,
+                        "token": "->",
+                        "lhs": {
+                          "kind": 40,
+                          "token": "ap"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "kind": 27,
+          "token": "if",
+          "cond": {
+            "kind": 14,
+            "token": ">",
+            "lhs": {
+              "kind": 43,
+              "token": "8",
+              "lhs": {
+                "kind": 42,
+                "token": "8",
+                "val": 8
+              }
+            },
+            "rhs": {
+              "kind": 43,
+              "token": "align",
+              "lhs": {
+                "kind": 40,
+                "token": "align"
+              }
+            }
+          },
+          "then": {
+            "kind": 38,
+            "token": "p",
+            "lhs": {
+              "kind": 16,
+              "token": "=",
+              "lhs": {
+                "kind": 40,
+                "token": "p"
+              },
+              "rhs": {
+                "kind": 43,
+                "token": "*",
+                "lhs": {
+                  "kind": 3,
+                  "token": "*",
+                  "lhs": {
+                    "kind": 43,
+                    "token": "/",
+                    "lhs": {
+                      "kind": 4,
+                      "token": "/",
+                      "lhs": {
+                        "kind": 43,
+                        "token": "+",
+                        "lhs": {
+                          "kind": 1,
+                          "token": "+",
+                          "lhs": {
+                            "kind": 43,
+                            "token": "p",
+                            "lhs": {
+                              "kind": 40,
+                              "token": "p"
+                            }
+                          },
+                          "rhs": {
+                            "kind": 43,
+                            "token": "+",
+                            "lhs": {
+                              "kind": 3,
+                              "token": "+",
+                              "lhs": {
+                                "kind": 43,
+                                "token": "15",
+                                "lhs": {
+                                  "kind": 42,
+                                  "token": "15",
+                                  "val": 15
+                                }
+                              },
+                              "rhs": {
+                                "kind": 43,
+                                "token": "+",
+                                "lhs": {
+                                  "kind": 42,
+                                  "token": "+",
+                                  "val": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "rhs": {
+                        "kind": 43,
+                        "token": "16",
+                        "lhs": {
+                          "kind": 42,
+                          "token": "16",
+                          "val": 16
+                        }
+                      }
+                    }
+                  },
+                  "rhs": {
+                    "kind": 43,
+                    "token": "16",
+                    "lhs": {
+                      "kind": 42,
+                      "token": "16",
+                      "val": 16
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "kind": 38,
+          "token": "ap",
+          "lhs": {
+            "kind": 16,
+            "token": "=",
+            "lhs": {
+              "kind": 19,
+              "token": "overflow_arg_area",
+              "lhs": {
+                "kind": 21,
+                "token": "->",
+                "lhs": {
+                  "kind": 40,
+                  "token": "ap"
+                }
+              }
+            },
+            "rhs": {
+              "kind": 43,
+              "token": "*",
+              "lhs": {
+                "kind": 3,
+                "token": "*",
+                "lhs": {
+                  "kind": 43,
+                  "token": "/",
+                  "lhs": {
+                    "kind": 4,
+                    "token": "/",
+                    "lhs": {
+                      "kind": 43,
+                      "token": "+",
+                      "lhs": {
+                        "kind": 1,
+                        "token": "+",
+                        "lhs": {
+                          "kind": 43,
+                          "token": "+",
+                          "lhs": {
+                            "kind": 1,
+                            "token": "+",
+                            "lhs": {
+                              "kind": 43,
+                              "token": "(",
+                              "lhs": {
+                                "kind": 43,
+                                "token": "(",
+                                "lhs": {
+                                  "kind": 40,
+                                  "token": "p"
+                                }
+                              }
+                            },
+                            "rhs": {
+                              "kind": 43,
+                              "token": "sz",
+                              "lhs": {
+                                "kind": 40,
+                                "token": "sz"
+                              }
+                            }
+                          }
+                        },
+                        "rhs": {
+                          "kind": 43,
+                          "token": "7",
+                          "lhs": {
+                            "kind": 42,
+                            "token": "7",
+                            "val": 7
+                          }
+                        }
+                      }
+                    },
+                    "rhs": {
+                      "kind": 43,
+                      "token": "8",
+                      "lhs": {
+                        "kind": 42,
+                        "token": "8",
+                        "val": 8
+                      }
+                    }
+                  }
+                },
+                "rhs": {
+                  "kind": 43,
+                  "token": "8",
+                  "lhs": {
+                    "kind": 42,
+                    "token": "8",
+                    "val": 8
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "kind": 26,
+          "token": "return",
+          "lhs": {
+            "kind": 43,
+            "token": "p",
+            "lhs": {
+              "kind": 40,
+              "token": "p"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
