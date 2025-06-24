@@ -3,98 +3,8 @@
     "name": "main",
     "body": {
       "kind": 32,
-      "token": "int",
-      "body": [
-        {
-          "kind": 32,
-          "token": ";",
-          "body": [
-            {
-              "kind": 38,
-              "token": "=",
-              "lhs": {
-                "kind": 0,
-                "token": "="
-              }
-            },
-            {
-              "kind": 38,
-              "token": ";",
-              "lhs": {
-                "kind": 18,
-                "token": "0",
-                "lhs": {
-                  "kind": 44,
-                  "token": "0"
-                },
-                "rhs": {
-                  "kind": 16,
-                  "token": "0",
-                  "lhs": {
-                    "kind": 40,
-                    "token": "0"
-                  },
-                  "rhs": {
-                    "kind": 43,
-                    "token": "0",
-                    "lhs": {
-                      "kind": 42,
-                      "token": "0"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "kind": 38,
-          "token": "printf",
-          "lhs": {
-            "kind": 37,
-            "token": ")",
-            "lhs": {
-              "kind": 40,
-              "token": "printf"
-            },
-            "args": [
-              {
-                "kind": 43,
-                "token": "\"Hello, World!\\n\"",
-                "lhs": {
-                  "kind": 40,
-                  "token": "\"Hello, World!\\n\""
-                }
-              }
-            ]
-          }
-        },
-        {
-          "kind": 38,
-          "token": "printf",
-          "lhs": {
-            "kind": 37,
-            "token": ")",
-            "lhs": {
-              "kind": 40,
-              "token": "printf"
-            },
-            "args": [
-              {
-                "kind": 43,
-                "token": "\"a=%d\\n\"",
-                "lhs": {
-                  "kind": 40,
-                  "token": "\"a=%d\\n\""
-                }
-              },
-              {
-                "kind": 40,
-                "token": "a"
-              }
-            ]
-          }
-        },
+      "token": "return",
+      "children": [
         {
           "kind": 26,
           "token": "return",
@@ -115,7 +25,7 @@
     "body": {
       "kind": 32,
       "token": "if",
-      "body": [
+      "children": [
         {
           "kind": 27,
           "token": "if",
@@ -194,7 +104,7 @@
         {
           "kind": 32,
           "token": ";",
-          "body": [
+          "children": [
             {
               "kind": 38,
               "token": "=",
@@ -391,7 +301,7 @@
     "body": {
       "kind": 32,
       "token": "if",
-      "body": [
+      "children": [
         {
           "kind": 27,
           "token": "if",
@@ -470,7 +380,7 @@
         {
           "kind": 32,
           "token": ";",
-          "body": [
+          "children": [
             {
               "kind": 38,
               "token": "=",
@@ -667,11 +577,11 @@
     "body": {
       "kind": 32,
       "token": "void",
-      "body": [
+      "children": [
         {
           "kind": 32,
           "token": ";",
-          "body": [
+          "children": [
             {
               "kind": 38,
               "token": "=",

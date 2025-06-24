@@ -3466,10 +3466,11 @@ static void ast_to_json(FILE *fp, Node *node, int indent) {
     fputs("\"els\": ", fp);
     ast_to_json(fp, node->els, next);
   }
+  // children attribute for body
   if (node->body) {
     fputs(",\n", fp);
     print_indent(fp, next);
-    fputs("\"body\": [\n", fp);
+    fputs("\"children\": [\n", fp);
     for (Node *cur = node->body; cur; cur = cur->next) {
       print_indent(fp, next + 2);
       ast_to_json(fp, cur, next + 2);
@@ -3481,6 +3482,7 @@ static void ast_to_json(FILE *fp, Node *node, int indent) {
     print_indent(fp, next);
     fputs("]", fp);
   }
+  // children attribute for args
   if (node->args) {
     fputs(",\n", fp);
     print_indent(fp, next);
